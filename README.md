@@ -52,7 +52,7 @@
     <img alt="Python" src="https://img.shields.io/badge/python-3.10%2B-blue">&nbsp;
     <img alt="Tools" src="https://img.shields.io/badge/tools-220-green">&nbsp;
     <img alt="Zabbix" src="https://img.shields.io/badge/zabbix-5.0%E2%80%947.4-red">&nbsp;
-    <a href="https://safeskill.dev/scan/initmax-zabbix-mcp-server"><img alt="SafeSkill" src="https://img.shields.io/badge/SafeSkill-91%2F100_Verified%20Safe-brightgreen"></a>
+    <a href="https://safeskill.dev/scan/initmax-zabbix-mcp-server"><img alt="SafeSkill" src="https://img.shields.io/badge/SafeSkill-100%2F100_Verified%20Safe-brightgreen"></a>
 </div>
 <br>
 <br>
