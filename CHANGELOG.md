@@ -22,6 +22,10 @@
 - **Zabbix 8.0 support** — added `JSON` value type (`value_type=6`) to enum mappings for item create/update; updated tool descriptions to list JSON as valid value type; Zabbix 8.0 added to compatibility table as experimental (`skip_version_check = true` required)
 - **SLA API** — added `sla.get`, `sla.create`, `sla.update`, `sla.delete`, and `sla.getsli` tools for managing Service Level Agreements and retrieving SLI (Service Level Indicator) data (Zabbix 6.0+); total tool count: 225 across 58 API groups
 
+### Added
+
+- **Docker `.env`-based port and host configuration** — `MCP_PORT` and `MCP_HOST` in `.env` now control both the container-internal port and the Docker host binding; previously `MCP_PORT` only affected the host side while the container was hardcoded to `8080`; `.env.example` added as a reference template; `port` in `config.toml` is ignored when running via Docker (overridden by `MCP_PORT`)
+
 ### Improved
 
 - **Parameter sanitization from production logs** — LLMs copying fields from YAML templates caused recurring Zabbix API rejections; the server now auto-strips: `description` from trigger dependencies, `formulaid` from discovery rule filter conditions, `vendor` from template.update, and clears `error_handler_params` when `error_handler` is DEFAULT (0)
